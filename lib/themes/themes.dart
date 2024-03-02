@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:love_crew/utils/dimentions.dart';
 
 import '../utils/app_colors.dart';
 
@@ -30,7 +32,22 @@ class Themes {
           // backgroundColor: Colors.white10,
           centerTitle: true,
           elevation: 5,
-          shadowColor: Colors.green)
+          shadowColor: Colors.green),
+
+
+    ///-------------------text field style---------------------------->
+    inputDecorationTheme: InputDecorationTheme(
+      focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(Dimensions.radiusDefault.r),
+          borderSide: const BorderSide(color: Colors.black),
+      ),
+
+      border: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(Dimensions.radiusDefault.r),
+        borderSide: const BorderSide(color: Colors.black),
+      ),
+      hintStyle: TextStyle(fontSize: 12.h, fontWeight: FontWeight.w400,color: AppColors.hintColor,fontStyle: FontStyle.italic, )
+    )
   );
 
 
