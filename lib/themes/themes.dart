@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 
+import '../utils/app_colors.dart';
+
 class Themes {
   final lightTheme = ThemeData.light().copyWith(
+
+    scaffoldBackgroundColor: AppColors.AppBgColor,
     ///-------------------------elevated button theme------------------------->
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
