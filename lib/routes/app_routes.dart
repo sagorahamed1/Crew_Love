@@ -1,11 +1,13 @@
 import 'package:get/get.dart';
 
+import '../views/screens/submissionScreen/submission_screen.dart';
+
 class AppRoutes {
-  // static const String splashScreen = "/splash_screen.dart";
+  static const String submissionScreen = "/submission_screen.dart";
 
 
   static List<GetPage> get routes => [
-    // GetPage(name: splashScreen, page: () => SplashScreen()),
+    GetPage(name: submissionScreen, page: () => SubmissionScreen()),
 
   ];
 }
