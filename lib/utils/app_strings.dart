@@ -31,4 +31,9 @@ class AppStrings{
   static const String pace = "Pace (optional)";
   static const String description = "Description (optional)";
 
+//========================> Submission Success Screen <=======================
+  static const String welcome = "WELCOME";
+  static const String thanksFor = "Thanks for adding your \ncrew to the CrewLove fam!";
+
+
 }

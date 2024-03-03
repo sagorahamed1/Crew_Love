@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:get/get.dart';
+import 'package:love_crew/routes/app_routes.dart';
 
 import '../../../../utils/app_colors.dart';
 import '../../../../utils/app_icons.dart';
@@ -102,7 +104,9 @@ sessionNameSection() {
         //========================================> Button Section <=======================================
         Center(
           child: CustomBackAndNextBotton(
-            ontap: () {},
+            ontap: () {
+              Get.toNamed(AppRoutes.submissionSuccessScreen);
+            },
             text: AppStrings.submit,
             bottonColor: AppColors.primaryColor,
             textColor: Colors.white,
