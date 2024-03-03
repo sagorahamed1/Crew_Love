@@ -38,6 +38,7 @@ dependencies:
   get: ^4.6.6
   flutter_screenutil: ^5.9.0
   flutter_svg: ^2.0.10+1
+  lottie: ^3.1.0
 
 
 dev_dependencies:
@@ -66,6 +67,7 @@ flutter:
   assets:
      - assets/icons/
      - assets/images/
+     - assets/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

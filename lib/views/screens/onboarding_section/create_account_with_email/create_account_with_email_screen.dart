@@ -22,79 +22,81 @@ class CreateAccountWithEmailScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Padding(
-        padding:
-            EdgeInsets.symmetric(horizontal: Dimensions.paddingSizeDefault.w),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            ///------------------------------create acount text-------------------------->
-            CustomText(
-              text: AppStrings.createAccount,
-              fontWeight: FontWeight.w700,
-              fontsize: 18.h,
-              top: 87.h,
-              bottom: 7.h,
-            ),
-            CustomText(
-              text: AppStrings.findYourCrewToday,
-              bottom: 71.h,
-            ),
-
-
-
-            ///-------------------------------------------up load profile picture or avater text-------------------------->
-            Align(
-              alignment: Alignment.center,
-              child: CustomText(
-                  text: AppStrings.uploadProfilePictureorAvatar,
-                  fontsize: 12.h,
-                  fontWeight: FontWeight.w500),
-            ),
-
-            SizedBox(
-              height: 17.h,
-            ),
-
-            Stack(
-              children: [
-                Align(
-                  alignment: Alignment.center,
-                  child: Container(
-                    height: 120.h,
-                    width: 120.w,
-                    decoration: const BoxDecoration(
-                        shape: BoxShape.circle, color: Colors.black),
-                    child: Image.asset(
-                      AppImages.profile_icon,
+      body: SafeArea(
+        child: Padding(
+          padding:
+              EdgeInsets.symmetric(horizontal: Dimensions.paddingSizeDefault.w),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              ///------------------------------create acount text-------------------------->
+              CustomText(
+                text: AppStrings.createAccount,
+                fontWeight: FontWeight.w700,
+                fontsize: 18.h,
+                top: 87.h,
+                bottom: 7.h,
+              ),
+              CustomText(
+                text: AppStrings.findYourCrewToday,
+                bottom: 71.h,
+              ),
+        
+        
+        
+              ///-------------------------------------------up load profile picture or avater text-------------------------->
+              Align(
+                alignment: Alignment.center,
+                child: CustomText(
+                    text: AppStrings.uploadProfilePictureorAvatar,
+                    fontsize: 12.h,
+                    fontWeight: FontWeight.w500),
+              ),
+        
+              SizedBox(
+                height: 17.h,
+              ),
+        
+              Stack(
+                children: [
+                  Align(
+                    alignment: Alignment.center,
+                    child: Container(
+                      height: 120.h,
+                      width: 120.w,
+                      decoration: const BoxDecoration(
+                          shape: BoxShape.circle, color: Colors.black),
+                      child: Image.asset(
+                        AppImages.profile_icon,
+                      ),
                     ),
                   ),
-                ),
-                Positioned(
-                  top: 0.h,
-                  right: 103.w,
-                  child: Container(
-                      decoration: BoxDecoration(
-                          color: Colors.white,
-                          shape: BoxShape.circle,
-                          border: Border.all(color: AppColors.primaryColor)),
-                      child: Padding(
-                        padding: EdgeInsets.all(5.r),
-                        child: const Icon(
-                          Icons.edit,
-                          color: AppColors.primaryColor,
-                        ),
-                      )),
-                )
-              ],
-            ),
-
-            SizedBox(
-              height: 36.h,
-            ),
-
-            _formSection(),
-          ],
+                  Positioned(
+                    top: 0.h,
+                    right: 103.w,
+                    child: Container(
+                        decoration: BoxDecoration(
+                            color: Colors.white,
+                            shape: BoxShape.circle,
+                            border: Border.all(color: AppColors.primaryColor)),
+                        child: Padding(
+                          padding: EdgeInsets.all(5.r),
+                          child: const Icon(
+                            Icons.edit,
+                            color: AppColors.primaryColor,
+                          ),
+                        )),
+                  )
+                ],
+              ),
+        
+              SizedBox(
+                height: 36.h,
+              ),
+        
+              _formSection(),
+            ],
+          ),
         ),
       ),
     );
@@ -204,7 +206,11 @@ class CreateAccountWithEmailScreen extends StatelessWidget {
                 },
               )
             ],
-          )
+          ),
+
+
+
+
         ],
       ),
     );
