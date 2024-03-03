@@ -1,3 +1,7 @@
+class AppStrings{
+  static const String usernameOrEmail = "Username or email";
+  static const String password = "Password";
+  static const String donotaveAnaccount = "Don’t have an account yet?";
 class AppStrings {
   //========================> Submission Screen <=======================
 
@@ -11,4 +15,15 @@ class AppStrings {
   static const String uploadPhoto = "Upload Cover Photo";
   static const String openCamera = "Open Camera & Take a Photo";
   static const String submit = "Submit";
+}
+
+
+  static const String createAccount = "Create Account";
+  static const String findYourCrewToday = "Find your crew today!";
+  static const String logIn = "Log In";
+  static const String uploadProfilePictureorAvatar = "Upload Profile Picture or Avatar";
+  static const String reenterPassword = "Re-enter Password";
+  static const String selectYourPreferences = "Select your preferences so we can personalize your page";
+  static const String whichLocationareyoubasedIn = "Which location are you based in?";
+  static const String zipCodeCityState = "Zip Code, City, State, Country, Region";
 }
