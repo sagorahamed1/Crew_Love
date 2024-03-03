@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import '../../../../controller/submission_controller.dart';
+import '../../../../routes/app_routes.dart';
 import '../../../../utils/app_colors.dart';
 import '../../../../utils/app_icons.dart';
 import '../../../../utils/app_strings.dart';
@@ -63,7 +64,7 @@ class CrewNameSection extends StatelessWidget {
                     textColor: AppColors.primaryColor,
                     suffixIcon: SvgPicture.asset(AppIcons.closeOutline),
                   ),
-                  //=====================================> Crew Leaders Button Section <======================================
+                  //=====================================> Crew Sessions Button Section <======================================
                   SizedBox(height: 24.h),
                   CustomText(
                     text: AppStrings.sessions,
@@ -72,7 +73,9 @@ class CrewNameSection extends StatelessWidget {
                   ),
                   SizedBox(height: 12.h),
                   CustomButton(
-                    ontap: () {},
+                    ontap: () {
+                      Get.toNamed(AppRoutes.addSessionScreen);
+                    },
                     text: AppStrings.addSession,
                     borderColor: AppColors.primaryColor,
                     textColor: AppColors.primaryColor,
