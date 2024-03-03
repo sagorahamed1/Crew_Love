@@ -9,4 +9,7 @@ class AppStrings{
   static const String logIn = "Log In";
   static const String uploadProfilePictureorAvatar = "Upload Profile Picture or Avatar";
   static const String reenterPassword = "Re-enter Password";
+  static const String selectYourPreferences = "Select your preferences so we can personalize your page";
+  static const String whichLocationareyoubasedIn = "Which location are you based in?";
+  static const String zipCodeCityState = "Zip Code, City, State, Country, Region";
 }
