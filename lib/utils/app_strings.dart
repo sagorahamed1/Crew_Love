@@ -24,6 +24,11 @@ class AppStrings{
   static const String whichLocationareyoubasedIn = "Which location are you based in?";
   static const String zipCodeCityState = "Zip Code, City, State, Country, Region";
 
+  static const String search = "Search";
+  static const String useCurrentLocation = "Use Current Location";
+  static const String sessionType = "Do you have a preferred session type?";
+
+
 //========================> Add Session Screen <=======================
   static const String sessionName = "Session Name*";
   static const String when = "When*";
