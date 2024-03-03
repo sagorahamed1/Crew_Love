@@ -5,6 +5,8 @@ import 'package:love_crew/routes/app_routes.dart';
 import 'package:love_crew/themes/themes.dart';
 import 'package:love_crew/views/screens/onboarding_section/log_in/log_in_screen.dart';
 
+import 'views/screens/submissionScreen/submission_screen.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -21,9 +23,9 @@ class MyApp extends StatelessWidget {
         title: 'Love Crew',
         theme: Themes().lightTheme,
         darkTheme: Themes().darkTheme,
-              initialRoute: AppRoutes.logInScreen,
+              initialRoute: AppRoutes.submissionScreen,
               getPages: AppRoutes.routes,
-         home: LogInScreen()
+         home: SubmissionScreen()
       ),
       designSize: Size(390, 844),
     );
