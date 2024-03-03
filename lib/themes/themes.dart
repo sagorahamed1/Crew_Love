@@ -37,6 +37,7 @@ class Themes {
 
     ///-------------------text field style---------------------------->
     inputDecorationTheme: InputDecorationTheme(
+
       focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(Dimensions.radiusDefault.r),
           borderSide: const BorderSide(color: Colors.black),
