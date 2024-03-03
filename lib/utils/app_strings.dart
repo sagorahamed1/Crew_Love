@@ -2,9 +2,8 @@ class AppStrings{
   static const String usernameOrEmail = "Username or email";
   static const String password = "Password";
   static const String donotaveAnaccount = "Don’t have an account yet?";
-class AppStrings {
-  //========================> Submission Screen <=======================
 
+  //========================> Submission Screen <=======================
   static const String submitCrew = "Submit a Crew";
   static const String back = "Back";
   static const String crewName = "Crew Name";
@@ -15,8 +14,6 @@ class AppStrings {
   static const String uploadPhoto = "Upload Cover Photo";
   static const String openCamera = "Open Camera & Take a Photo";
   static const String submit = "Submit";
-}
-
 
   static const String createAccount = "Create Account";
   static const String findYourCrewToday = "Find your crew today!";
