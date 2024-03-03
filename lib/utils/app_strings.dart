@@ -23,4 +23,12 @@ class AppStrings{
   static const String selectYourPreferences = "Select your preferences so we can personalize your page";
   static const String whichLocationareyoubasedIn = "Which location are you based in?";
   static const String zipCodeCityState = "Zip Code, City, State, Country, Region";
+
+//========================> Add Session Screen <=======================
+  static const String sessionName = "Session Name*";
+  static const String when = "When*";
+  static const String where = "Where*";
+  static const String pace = "Pace (optional)";
+  static const String description = "Description (optional)";
+
 }
